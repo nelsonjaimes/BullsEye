@@ -23,17 +23,7 @@ class AboutAutorViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    @IBAction func navigationLindkedin(){
-        let webURL = URL(string: "https://www.linkedin.com/in/nelson-jaimes-gonzales/")!
-        
-        let appURL = URL(string: "linkedin://profile/nelson-jaimes-gonzales")!
-        
-        if UIApplication.shared.canOpenURL(appURL) {
-            UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
-        }
-    }
+    
     @IBAction func onClickClose(){
         dismiss(animated: true, completion: nil)
     }

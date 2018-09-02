@@ -10,10 +10,10 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
-    @IBOutlet weak var tvAbout: UITextView!
+    @IBOutlet weak var tvAboutApplication: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tvAbout.alignTextVerticallyInContainer()
+    tvAboutApplication.alignTextVerticallyInContainer()
     }
     
     @IBAction func onClickClose() {
